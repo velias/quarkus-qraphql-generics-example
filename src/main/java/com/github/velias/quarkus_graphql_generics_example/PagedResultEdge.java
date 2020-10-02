@@ -12,10 +12,11 @@ import org.eclipse.microprofile.graphql.NonNull;
  *
  * @author Vlastimil Elias (velias at redhat dot com)
  */
-public class PagedResultEdge<T> {
+public class PagedResultEdge<T> implements IPagedResultEdge<T> {
     
     @NonNull
     protected T node;
+    
     @NonNull
     protected String cursor;
 

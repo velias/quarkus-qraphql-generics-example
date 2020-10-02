@@ -20,7 +20,22 @@ import org.eclipse.microprofile.graphql.Query;
 public class ExampleGraphQL {
 
     @Query
-    public PagedResultEdge<String> getGetGenerics() {
+    public String getString() {
+        return null;
+    }
+
+    @Query
+    public PagedResultConnectionResolvedToString getPagedResultResolvedToString() {
+        return null;
+    }
+
+    @Query
+    public PagedResultConnection<String> getPagedResultString() {
+        return null;
+    }
+
+    @Query
+    public PagedResultConnection<Person> getPagedResultPerson() {
         return null;
     }
 

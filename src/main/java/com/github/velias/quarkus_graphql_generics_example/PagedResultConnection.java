@@ -24,15 +24,16 @@ import org.eclipse.microprofile.graphql.NonNull;
 public class PagedResultConnection<V> {
 
     @NonNull
-    protected List<PagedResultEdge<V>> edges = new ArrayList<>();
+    protected List<IPagedResultEdge<V>> edges = new ArrayList<>();
+    
     @NonNull
     protected PageInfo pageInfo;
 
-    public List<PagedResultEdge<V>> getEdges() {
+    public List<IPagedResultEdge<V>> getEdges() {
         return edges;
     }
 
-    public void setEdges(List<PagedResultEdge<V>> edges) {
+    public void setEdges(List<IPagedResultEdge<V>> edges) {
         this.edges = edges;
     }
 
