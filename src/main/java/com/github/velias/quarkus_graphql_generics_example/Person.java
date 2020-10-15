@@ -8,6 +8,13 @@ public class Person {
     String surname;
     Date birthDate;
 
+    public Person(String name, String surname, Date birthDate) {
+        super();
+        this.name = name;
+        this.surname = surname;
+        this.birthDate = birthDate;
+    }
+
     public String getName() {
         return name;
     }
@@ -33,12 +40,11 @@ public class Person {
     }
 
     public int getAge() {
-        if(birthDate != null) {
-            return Long.valueOf((System.currentTimeMillis() - birthDate.getTime())/(365*24*60*60*1000L)).intValue();
+        if (birthDate != null) {
+            return Long.valueOf((System.currentTimeMillis() - birthDate.getTime()) / (365 * 24 * 60 * 60 * 1000L)).intValue();
         } else {
-        return -1;
+            return -1;
         }
     }
-
 
 }

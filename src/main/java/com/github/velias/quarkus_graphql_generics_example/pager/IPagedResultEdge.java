@@ -1,4 +1,4 @@
-package com.github.velias.quarkus_graphql_generics_example;
+package com.github.velias.quarkus_graphql_generics_example.pager;
 
 public interface IPagedResultEdge<V> {
     

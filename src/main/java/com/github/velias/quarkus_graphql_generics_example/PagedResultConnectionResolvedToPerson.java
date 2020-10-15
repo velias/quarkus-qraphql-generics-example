@@ -19,6 +19,6 @@ import com.github.velias.quarkus_graphql_generics_example.pager.PagedResultConne
  * @author Vlastimil Elias (velias at redhat dot com)
  */
 @Description("Pager response as defined in https://relay.dev/graphql/connections.htm")
-public class PagedResultConnectionResolvedToString extends PagedResultConnection<String> {
+public class PagedResultConnectionResolvedToPerson extends PagedResultConnection<Person> {
 
 }

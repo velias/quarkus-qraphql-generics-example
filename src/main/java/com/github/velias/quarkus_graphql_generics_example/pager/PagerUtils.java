@@ -3,7 +3,7 @@
  * Copyright 2020 Red Hat Inc. and/or its affiliates and other contributors
  * as indicated by the @authors tag. All rights reserved.
  */
-package com.github.velias.quarkus_graphql_generics_example;
+package com.github.velias.quarkus_graphql_generics_example.pager;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
