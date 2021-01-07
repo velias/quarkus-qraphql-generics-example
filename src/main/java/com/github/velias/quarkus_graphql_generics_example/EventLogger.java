@@ -13,7 +13,7 @@ import org.jboss.logging.Logger;
 import io.smallrye.graphql.schema.model.Operation;
 
 /**
- * Class to examine Events fired by the GraphGQ framework
+ * Class to examine Events fired by the GraphQL framework
  *
  * @author Vlastimil Elias (velias at redhat dot com)
  */
@@ -22,7 +22,7 @@ public class EventLogger {
     
     private static final Logger LOG = Logger.getLogger(EventLogger.class);
     
-    public void processEvent(@Observes Operation event) {
+    public void processOperationEvent(@Observes Operation event) {
         LOG.error(event);
     }
 
